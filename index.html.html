@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabaja con nosotros — Dolça Llar</title>
+<style>
+  :root {
+    --navy: #003690;
+    --navy-dark: #00265e;
+    --paper: #F4F2ED;
+    --ink: #1a1a1a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid rgba(0,54,144,0.15);
+  }
+
+  .brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+  }
+
+  .tenure {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  main {
+    padding: 56px 0 40px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 1.15;
+    color: var(--navy);
+    font-weight: 700;
+    max-width: 560px;
+  }
+
+  .lede {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    max-width: 520px;
+  }
+
+  .shared-points {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .shared-points .tag {
+    background: rgba(0,54,144,0.08);
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+
+  .paths {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .path-card {
+    background: white;
+    border: 1px solid rgba(0,54,144,0.15);
+    border-radius: 6px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .path-card.navy {
+    background: var(--navy);
+    color: white;
+    border: none;
+  }
+
+  .path-label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .path-card.navy .path-label {
+    color: rgba(255,255,255,0.7);
+  }
+
+  .path-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  .path-card.navy .path-title {
+    color: white;
+  }
+
+  .path-desc {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 24px;
+    flex-grow: 1;
+  }
+
+  .path-card.navy .path-desc {
+    color: rgba(255,255,255,0.85);
+  }
+
+  .path-button {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: var(--navy);
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background 0.2s ease;
+  }
+
+  .path-card.navy .path-button {
+    background: white;
+    color: var(--navy);
+  }
+
+  .path-button:hover {
+    opacity: 0.9;
+  }
+
+  .email-plain {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    color: #999;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .email-plain a {
+    color: var(--navy);
+    text-decoration: underline;
+  }
+
+  footer {
+    padding: 32px 0 48px;
+    border-top: 1px solid rgba(0,54,144,0.15);
+    margin-top: 40px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+  }
+
+  @media (max-width: 560px) {
+    h1 { font-size: 30px; }
+    .lede { font-size: 16px; }
+    .paths { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Dolça Llar</div>
+      <div class="tenure">Inmobiliaria barrial · Barcelona · desde 1999</div>
+    </header>
+
+    <main>
+      <h1>Trabaja con nosotros en el sector inmobiliario.</h1>
+      <p class="lede">Tengas o no experiencia previa, te contamos qué te ofrecemos y cómo dar el siguiente paso.</p>
+
+      <div class="shared-points">
+        <span class="tag">Lunes a viernes, sin sábados</span>
+        <span class="tag">12 oficinas en Barcelona</span>
+        <span class="tag">25 años en el barrio</span>
+      </div>
+
+      <div class="paths">
+        <div class="path-card">
+          <div class="path-label">Con experiencia</div>
+          <div class="path-title">Ya conoces el oficio</div>
+          <p class="path-desc">Te sumas a un equipo con trayectoria, comisión transparente desde el primer día y horario que respeta tu tiempo.</p>
+          <a class="path-button" href="mailto:coordinacion@dolçallar.es?subject=CV%20-%20Con%20experiencia">Enviar mi CV</a>
+        </div>
+
+        <div class="path-card navy">
+          <div class="path-label">Sin experiencia</div>
+          <div class="path-title">Quieres empezar</div>
+          <p class="path-desc">Te formamos desde cero con un proceso de onboarding estructurado. Sueldo fijo + comisión mientras aprendes.</p>
+          <a class="path-button" href="mailto:coordinacion@dolçallar.es?subject=CV%20-%20Sin%20experiencia">Enviar mi CV</a>
+        </div>
+      </div>
+
+      <div class="email-plain">Si los botones no te abren el correo: escríbenos a <a href="mailto:coordinacion@dolçallar.es">coordinacion@dolçallar.es</a></div>
+    </main>
+
+    <footer>
+      Dolça Llar · dolcallar.es
+    </footer>
+  </div>
+</body>
+</html>
